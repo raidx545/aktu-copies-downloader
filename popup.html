@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 260px; margin: 0; padding: 14px; background: #0b0b0e; color: #e4e4e7;
+         font: 13px/1.5 ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; }
+  h1 { font-size: 14px; margin: 0 0 2px; color: #f59e0b; }
+  .sub { color: #71717a; font-size: 11px; margin-bottom: 12px; }
+  button { width: 100%; background: #f59e0b; color: #18181b; border: 0; border-radius: 7px;
+           padding: 9px; font: inherit; font-weight: 700; cursor: pointer; }
+  button:hover { filter: brightness(1.08); }
+  button.ghost { background: #18181b; color: #e4e4e7; border: 1px solid #3f3f46; font-weight: 400; margin-top: 7px; }
+  .status { margin-top: 11px; padding: 8px; border-radius: 6px; background: #18181b;
+            border: 1px solid #27272a; font-size: 11px; color: #a1a1aa; }
+  ol { margin: 10px 0 0; padding-left: 17px; color: #a1a1aa; font-size: 11px; }
+  li { margin-bottom: 3px; }
+</style>
+</head>
+<body>
+  <h1>RaidX AKTU Copy Downloader</h1>
+  <div class="sub">answer script → one PDF</div>
+  <button id="toggle">Show / hide panel</button>
+  <button class="ghost" id="open">Open AKTU portal</button>
+  <div class="status" id="status">checking…</div>
+  <ol>
+    <li>Open your answer script</li>
+    <li>Fetch all pages</li>
+    <li>Download PDF</li>
+  </ol>
+  <script src="popup.js"></script>
+</body>
+</html>
